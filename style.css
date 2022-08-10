@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root {
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --btn-color: hsl(215, 11%, 22%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --light-grey: hsl(217, 12%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 97%, 53%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container, 
+.thank-you {
+    background-color: var(--dark-blue);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+.container img {
+    background-color: var(--btn-color);
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.container h1,
+.thank-you h2 {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+p {
+    color: var(--light-grey);
+    margin-bottom: 30px;
+}
+
+.container ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container ul li button {
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    color: var(--medium-grey);
+    transition: 300ms;
+}
+
+.container ul li button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container ul li button:focus {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+.btn-submit {
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--orange);
+    margin-top: 30px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.btn-submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* THANK YOU */
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you img {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.thank-you .grey {
+    background-color: var(--btn-color);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;    
+}
+
+.attribution a {
+    color: var(--orange)
+}
+
